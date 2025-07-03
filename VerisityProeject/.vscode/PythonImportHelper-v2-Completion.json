@@ -56,6 +56,30 @@
         "documentation": {}
     },
     {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
@@ -202,14 +226,6 @@
         "documentation": {}
     },
     {
-        "label": "UserCreationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
         "label": "forms",
         "importPath": "django",
         "description": "django",
@@ -318,11 +334,20 @@
         "documentation": {}
     },
     {
+        "label": "DefineUserForm",
+        "kind": 6,
+        "importPath": "university.authentication.forms",
+        "description": "university.authentication.forms",
+        "peekOfCode": "class DefineUserForm(UserCreationForm):\n  class Meta:\n    model = User\n    fields = ('username',  'first_name', 'last_name','email', 'password1', 'password2',)",
+        "detail": "university.authentication.forms",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "university.authentication.urls",
         "description": "university.authentication.urls",
-        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  ]",
+        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth', views.DefineAuthForm, name='define_auth_form'),\n  ]",
         "detail": "university.authentication.urls",
         "documentation": {}
     },
@@ -332,6 +357,15 @@
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
         "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       #return render(request, 'authentication/success.html')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "DefineAuthForm",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def DefineAuthForm(request):\n   if request.method=='POST':\n      frm = DefineUserForm(request.POST)\n      if frm.is_valid():\n         frm.save();\n         print(\"user crated succedfully\")\n   else:\n      frm = DefineUserForm()\n      print(\"user not created\")\n   return render(request, 'authentication/define_auth.html', {'form': frm})",
         "detail": "university.authentication.views",
         "documentation": {}
     },
