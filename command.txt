@@ -1,6 +1,10 @@
 // django roadmap
 https://chatgpt.com/share/68661f92-0240-8005-b3e8-92a7b8bc3c17
 
+//request methods :
+https://chatgpt.com/share/6866ce63-5e28-8005-9a6f-3fd577d45628
+
+
 
 --> vitual environment create
 python3 -m venv venv

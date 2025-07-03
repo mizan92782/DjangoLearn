@@ -80,6 +80,22 @@
         "documentation": {}
     },
     {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
@@ -283,6 +299,14 @@
         "documentation": {}
     },
     {
+        "label": "update_session_auth_hash",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "forms",
         "importPath": "django",
         "description": "django",
@@ -396,7 +420,7 @@
         "kind": 5,
         "importPath": "university.authentication.urls",
         "description": "university.authentication.urls",
-        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth/', views.DefineAuthForm, name='define_auth_form'),\n  django.urls.path('login/', views.login_form, name='login_form'),\n  django.urls.path('logout/', views.logout_form, name='logout_form'),\n  ]",
+        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth/', views.DefineAuthForm, name='define_auth_form'),\n  django.urls.path('login/', views.login_form, name='login_form'),\n  django.urls.path('logout/', views.logout_form, name='logout_form'),\n  django.urls.path('password/', views.password_change, name='password_form'),\n  ]",
         "detail": "university.authentication.urls",
         "documentation": {}
     },
@@ -432,7 +456,16 @@
         "kind": 2,
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
-        "peekOfCode": "def logout_form(request):\n    if request.method == 'POST':\n        logout(request)\n        print(\"User logged out successfully\")\n        # Optionally, redirect to a success page or login page\n        return redirect('login_form')\n    else:\n        print(\"GET request - rendering logout form\")\n    return render(request, 'authentication/logout.html')  # Adjust the template as needed",
+        "peekOfCode": "def logout_form(request):\n    if request.method == 'POST':\n        logout(request)\n        print(\"User logged out successfully\")\n        # Optionally, redirect to a success page or login page\n        return redirect('login_form')\n    else:\n        print(\"GET request - rendering logout form\")\n    return render(request, 'authentication/logout.html')  # Adjust the template as needed\nfrom django.contrib.auth.forms import PasswordChangeForm",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "password_change",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def password_change(request):\n    if request.method == 'POST':\n        # ঠিকভাবে arguments দিন\n        frm = PasswordChangeForm(request.user, request.POST)\n        if frm.is_valid():\n            frm.save()\n            update_session_auth_hash(request, frm.user)  # Session logout হওয়া ঠেকাতে\n            print(\"Password changed successfully.\")\n            # redirect করা ভালো, যাতে form re-submission না হয়\n            return redirect('login_form')  # আপনার URL name অনুসারে adjust করুন",
         "detail": "university.authentication.views",
         "documentation": {}
     },

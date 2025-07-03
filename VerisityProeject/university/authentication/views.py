@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import redirect, render
-from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, PasswordChangeForm
 from django.contrib.auth import authenticate,login,logout
 
 from .forms import DefineUserForm
@@ -78,3 +78,26 @@ def logout_form(request):
         print("GET request - rendering logout form")
     
     return render(request, 'authentication/logout.html')  # Adjust the template as needed
+ 
+ 
+ 
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
+
+def password_change(request):
+    if request.method == 'POST':
+        # ঠিকভাবে arguments দিন
+        frm = PasswordChangeForm(request.user, request.POST)
+        if frm.is_valid():
+            frm.save()
+            update_session_auth_hash(request, frm.user)  # Session logout হওয়া ঠেকাতে
+            print("Password changed successfully.")
+            # redirect করা ভালো, যাতে form re-submission না হয়
+            return redirect('login_form')  # আপনার URL name অনুসারে adjust করুন
+        else:
+            print("Form invalid:", frm.errors)
+    else:
+        frm = PasswordChangeForm(request.user)
+        print('Password change form rendered')
+    
+    return render(request, 'authentication/password_change.html', {'form': frm})
