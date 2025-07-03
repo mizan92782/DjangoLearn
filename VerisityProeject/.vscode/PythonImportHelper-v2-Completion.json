@@ -72,6 +72,14 @@
         "documentation": {}
     },
     {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
@@ -194,6 +202,31 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -226,6 +259,30 @@
         "documentation": {}
     },
     {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "forms",
         "importPath": "django",
         "description": "django",
@@ -247,14 +304,6 @@
         "description": "students",
         "isExtraImport": true,
         "detail": "students",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -338,7 +387,7 @@
         "kind": 6,
         "importPath": "university.authentication.forms",
         "description": "university.authentication.forms",
-        "peekOfCode": "class DefineUserForm(UserCreationForm):\n  class Meta:\n    model = User\n    fields = ('username',  'first_name', 'last_name','email', 'password1', 'password2',)",
+        "peekOfCode": "class DefineUserForm(UserCreationForm):\n  class Meta:\n    model = User\n    fields = ('username',  'first_name', 'last_name','email', 'password1', 'password2',)\n# login form",
         "detail": "university.authentication.forms",
         "documentation": {}
     },
@@ -347,7 +396,7 @@
         "kind": 5,
         "importPath": "university.authentication.urls",
         "description": "university.authentication.urls",
-        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth', views.DefineAuthForm, name='define_auth_form'),\n  ]",
+        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth/', views.DefineAuthForm, name='define_auth_form'),\n  django.urls.path('login/', views.login_form, name='login_form'),\n  django.urls.path('logout/', views.logout_form, name='logout_form'),\n  ]",
         "detail": "university.authentication.urls",
         "documentation": {}
     },
@@ -356,7 +405,7 @@
         "kind": 2,
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
-        "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       #return render(request, 'authentication/success.html')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
+        "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       return render(request, 'logout_form')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
         "detail": "university.authentication.views",
         "documentation": {}
     },
@@ -366,6 +415,24 @@
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
         "peekOfCode": "def DefineAuthForm(request):\n   if request.method=='POST':\n      frm = DefineUserForm(request.POST)\n      if frm.is_valid():\n         frm.save();\n         print(\"user crated succedfully\")\n   else:\n      frm = DefineUserForm()\n      print(\"user not created\")\n   return render(request, 'authentication/define_auth.html', {'form': frm})",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_form",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def login_form(request):\n    if request.method == 'POST':\n        username = request.POST.get('username')\n        password = request.POST.get('password')\n        print(f\"Submitted username: {username}\")\n        print(f\"Submitted password: {password}\")\n        frm = AuthenticationForm(request=request,data=request.POST)\n        if frm.is_valid():\n            serName = frm.cleaned_data['username']\n            UserPassword = frm.cleaned_data['password']",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_form",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def logout_form(request):\n    if request.method == 'POST':\n        logout(request)\n        print(\"User logged out successfully\")\n        # Optionally, redirect to a success page or login page\n        return redirect('login_form')\n    else:\n        print(\"GET request - rendering logout form\")\n    return render(request, 'authentication/logout.html')  # Adjust the template as needed",
         "detail": "university.authentication.views",
         "documentation": {}
     },
