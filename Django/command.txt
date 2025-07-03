@@ -1,0 +1,64 @@
+// django roadmap
+https://chatgpt.com/share/68661f92-0240-8005-b3e8-92a7b8bc3c17
+
+
+--> vitual environment create
+python3 -m venv venv
+
+--> active virtual environment
+source venv/bin/activate
+
+---> Django download
+pip install django
+
+
+// create project
+django-admin startproject mysite
+
+// create app
+python manage.py createapp appname
+
+// then set app name in setting 
+
+// then migrate
+python manage.py migrate
+
+
+// run server
+python manage.py runserver
+
+
+
+
+
+//create super user
+python manage.py createsuperuser
+
+
+//model creat+ then make migration to convert in database
+
+
+
+//database crud:
+https://chatgpt.com/share/686591f1-76c8-8005-918a-64ce27ad0eca
+
+
+*** object method:
+https://chatgpt.com/share/6865fccd-2f84-8005-aaef-1d630fd67a8c
+
+// csrf token
+https://chatgpt.com/share/6865fccd-2f84-8005-aaef-1d630fd67a8c
+
+
+
+// model field
+https://chatgpt.com/share/68660a54-744c-8005-9c52-c2fbbda05767
+
+
+
+//form fieldhttps://chatgpt.com/share/686614e2-ec58-8005-9956-4c212b36340b
+
+
+
+//frontend ,api ,backend ,sql, database relatio
+https://chatgpt.com/share/68661cc4-0138-8005-ad35-5b7e6d119593

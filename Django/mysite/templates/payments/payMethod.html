@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/paymethod_show.css' %}">
+  </head>
+
+  <body>
+
+
+    {% if pay %}
+
+    <table>
+      <tr>
+        <th>id</th>
+        <th>option</th>
+        <th>min money</th>
+      </tr>
+
+      {% for p in pay %}
+      <tr>
+        <td>{{ p.id }}</td>
+        <td>{{ p.pay_option }}</td>
+        <td>{{ p.min_pay }}</td>
+      </tr>
+      {% endfor %}
+
+    </table>
+
+    {% else %}
+    <p>there is no use</p>
+    {% endif %}
+
+  </body>
+
+</html>
