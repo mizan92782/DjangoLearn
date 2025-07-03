@@ -1,10 +1,74 @@
 [
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.db",
         "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
         "detail": "django.db",
         "documentation": {}
     },
@@ -41,59 +105,11 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "ValidationError",
-        "importPath": "django.forms",
-        "description": "django.forms",
-        "isExtraImport": true,
-        "detail": "django.forms",
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -154,6 +170,62 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
         "label": "views",
         "importPath": "students",
         "description": "students",
@@ -184,30 +256,6 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -261,6 +309,33 @@
         "documentation": {}
     },
     {
+        "label": "AuthenticationConfig",
+        "kind": 6,
+        "importPath": "university.authentication.apps",
+        "description": "university.authentication.apps",
+        "peekOfCode": "class AuthenticationConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'authentication'",
+        "detail": "university.authentication.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "university.authentication.urls",
+        "description": "university.authentication.urls",
+        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  ]",
+        "detail": "university.authentication.urls",
+        "documentation": {}
+    },
+    {
+        "label": "authentication_form",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       #return render(request, 'authentication/success.html')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "university.students.migrations.0001_initial",
@@ -292,7 +367,7 @@
         "kind": 6,
         "importPath": "university.students.forms",
         "description": "university.students.forms",
-        "peekOfCode": "class StudentForm(forms.ModelForm):\n  #meta defines this model connected with which model and which fields \n  class Meta:\n    model=Student\n    fields = ['first_name', 'last_name', 'batch']\n  #clearn data under a condition\n  def clean_first_name(self):\n      first_name_validation = self.cleaned_data.get('first_name')\n      if len(first_name_validation) < 3:\n          raise forms.ValidationError(\"First name must be at least 3 characters long.\")",
+        "peekOfCode": "class StudentForm(forms.ModelForm):\n  #meta defines this model connected with which model and which fields \n  # this model work for decleared model\n  class Meta:\n    model=Student\n    #this model take dat for this fields\n    fields = ['first_name', 'last_name', 'batch']\n  #clearn data under a condition\n  def clean_first_name(self):\n      first_name_validation = self.cleaned_data.get('first_name')",
         "detail": "university.students.forms",
         "documentation": {}
     },
@@ -422,7 +497,7 @@
         "kind": 5,
         "importPath": "university.university.settings",
         "description": "university.university.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'students',\n    'teachers',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'students',\n    'teachers',\n    'authentication',",
         "detail": "university.university.settings",
         "documentation": {}
     },
@@ -539,7 +614,7 @@
         "kind": 5,
         "importPath": "university.university.urls",
         "description": "university.university.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n    path('auth/', include('authentication.urls')),\n]",
         "detail": "university.university.urls",
         "documentation": {}
     },

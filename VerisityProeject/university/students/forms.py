@@ -5,8 +5,10 @@ from .models import Student
 #from from input data
 class StudentForm(forms.ModelForm):
   #meta defines this model connected with which model and which fields 
+  # this model work for decleared model
   class Meta:
     model=Student
+    #this model take dat for this fields
     fields = ['first_name', 'last_name', 'batch']
     
     
