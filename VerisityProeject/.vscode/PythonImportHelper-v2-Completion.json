@@ -56,6 +56,23 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.forms",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
         "label": "UserCreationForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
@@ -89,6 +106,14 @@
     },
     {
         "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
         "isExtraImport": true,
@@ -411,7 +436,16 @@
         "kind": 6,
         "importPath": "university.authentication.forms",
         "description": "university.authentication.forms",
-        "peekOfCode": "class DefineUserForm(UserCreationForm):\n  class Meta:\n    model = User\n    fields = ('username',  'first_name', 'last_name','email', 'password1', 'password2',)\n# login form",
+        "peekOfCode": "class DefineUserForm(UserCreationForm):\n  class Meta:\n    model = User\n    fields = ('username',  'first_name', 'last_name','email', 'password1', 'password2',)\n# modify user change form\nclass UserChangeScreenModify(UserChangeForm):\n  password=None\n  class Meta:\n    model = User\n    fields = ('username', 'first_name', 'last_name', 'email', 'is_active', 'is_staff', 'is_superuser')",
+        "detail": "university.authentication.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeScreenModify",
+        "kind": 6,
+        "importPath": "university.authentication.forms",
+        "description": "university.authentication.forms",
+        "peekOfCode": "class UserChangeScreenModify(UserChangeForm):\n  password=None\n  class Meta:\n    model = User\n    fields = ('username', 'first_name', 'last_name', 'email', 'is_active', 'is_staff', 'is_superuser')",
         "detail": "university.authentication.forms",
         "documentation": {}
     },
@@ -420,7 +454,7 @@
         "kind": 5,
         "importPath": "university.authentication.urls",
         "description": "university.authentication.urls",
-        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth/', views.DefineAuthForm, name='define_auth_form'),\n  django.urls.path('login/', views.login_form, name='login_form'),\n  django.urls.path('logout/', views.logout_form, name='logout_form'),\n  django.urls.path('password/', views.password_change, name='password_form'),\n  ]",
+        "peekOfCode": "urlpatterns = [\n  django.urls.path('', views.authentication_form, name='auth_form'),\n  django.urls.path('dauth/', views.DefineAuthForm, name='define_auth_form'),\n  django.urls.path('login/', views.login_form, name='login_form'),\n  django.urls.path('logout/', views.logout_form, name='logout_form'),\n  django.urls.path('password/', views.password_change, name='password_form'),\n  django.urls.path('userChange/', views.user_changeform, name='user_change_form'),\n  ]",
         "detail": "university.authentication.urls",
         "documentation": {}
     },
@@ -429,7 +463,7 @@
         "kind": 2,
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
-        "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       return render(request, 'logout_form')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
+        "peekOfCode": "def authentication_form(request):\n   if request.method == 'POST':\n     frm= UserCreationForm(request.POST)\n     if frm.is_valid():\n       frm.save()\n       # Optionally, redirect to a success page or login page\n       return redirect('logout_form')\n   else:\n      frm=UserCreationForm()\n   return render(request, 'authentication/authentication.html',{'form': frm})",
         "detail": "university.authentication.views",
         "documentation": {}
     },
@@ -456,7 +490,7 @@
         "kind": 2,
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
-        "peekOfCode": "def logout_form(request):\n    if request.method == 'POST':\n        logout(request)\n        print(\"User logged out successfully\")\n        # Optionally, redirect to a success page or login page\n        return redirect('login_form')\n    else:\n        print(\"GET request - rendering logout form\")\n    return render(request, 'authentication/logout.html')  # Adjust the template as needed\nfrom django.contrib.auth.forms import PasswordChangeForm",
+        "peekOfCode": "def logout_form(request):\n    if request.method == 'POST':\n        logout(request)\n        print(\"User logged out successfully\")\n        # Optionally, redirect to a success page or login page\n        return redirect('login_form')\n    else:\n        print(\"GET request - rendering logout form\")\n    return render(request, 'authentication/logout.html')  # Adjust the template as needed\nfrom django.contrib.auth.forms import PasswordChangeForm, UserChangeForm",
         "detail": "university.authentication.views",
         "documentation": {}
     },
@@ -466,6 +500,15 @@
         "importPath": "university.authentication.views",
         "description": "university.authentication.views",
         "peekOfCode": "def password_change(request):\n    if request.method == 'POST':\n        # ঠিকভাবে arguments দিন\n        frm = PasswordChangeForm(request.user, request.POST)\n        if frm.is_valid():\n            frm.save()\n            update_session_auth_hash(request, frm.user)  # Session logout হওয়া ঠেকাতে\n            print(\"Password changed successfully.\")\n            # redirect করা ভালো, যাতে form re-submission না হয়\n            return redirect('login_form')  # আপনার URL name অনুসারে adjust করুন",
+        "detail": "university.authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_changeform",
+        "kind": 2,
+        "importPath": "university.authentication.views",
+        "description": "university.authentication.views",
+        "peekOfCode": "def user_changeform(request):\n    if request.user.is_authenticated:\n        if request.method =='POST':\n            # frm = UserChangeForm(request.POST, instance=request.user) inherite the UserCahngeForm\n            frm = UserChangeScreenModify(request.POST, instance=request.user)\n            if frm.is_valid():\n                frm.save()\n                print(\"User information updated successfully\")\n                return redirect('user_change_form')  # Redirect to the same form or another page\n        else:",
         "detail": "university.authentication.views",
         "documentation": {}
     },

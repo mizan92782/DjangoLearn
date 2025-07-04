@@ -3,16 +3,17 @@ from django.shortcuts import redirect, render
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, PasswordChangeForm
 from django.contrib.auth import authenticate,login,logout
 
-from .forms import DefineUserForm
+from .forms import DefineUserForm, UserChangeScreenModify
 
 # Create your views here.
 def authentication_form(request):
    if request.method == 'POST':
      frm= UserCreationForm(request.POST)
+     
      if frm.is_valid():
        frm.save()
        # Optionally, redirect to a success page or login page
-       return render(request, 'logout_form')
+       return redirect('logout_form')
    else:
       frm=UserCreationForm()
   
@@ -56,7 +57,7 @@ def login_form(request):
             if user is not None:
               login(request, user)
               print("Login successful")
-            return redirect('logout_form')  # Replace 'home' with your redirect target
+            return redirect('user_change_form')  # Replace 'home' with your redirect target
         else:
             print("Login failed")
             #print("Form errors:", frm.errors)
@@ -81,9 +82,10 @@ def logout_form(request):
  
  
  
-from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 from django.contrib.auth import update_session_auth_hash
 
+# password change
 def password_change(request):
     if request.method == 'POST':
         # ঠিকভাবে arguments দিন
@@ -101,3 +103,28 @@ def password_change(request):
         print('Password change form rendered')
     
     return render(request, 'authentication/password_change.html', {'form': frm})
+
+
+
+
+#user change form
+def user_changeform(request):
+    if request.user.is_authenticated:
+        if request.method =='POST':
+            # frm = UserChangeForm(request.POST, instance=request.user) inherite the UserCahngeForm
+            frm = UserChangeScreenModify(request.POST, instance=request.user)
+            
+            if frm.is_valid():
+                frm.save()
+                print("User information updated successfully")
+                return redirect('user_change_form')  # Redirect to the same form or another page
+        else:
+            frm = UserChangeScreenModify(instance=request.user)
+            
+        
+        return render(request, 'authentication/user_change.html', {'form': frm})
+            
+   
+    
+    
+    
