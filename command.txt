@@ -6,6 +6,11 @@ https://chatgpt.com/share/6866ce63-5e28-8005-9a6f-3fd577d45628
 
 
 
+//*** middleware
+middle is processiing unit  between request and response,
+ request----> middleware----> respons:
+ //https://chatgpt.com/share/6867da2b-5560-8005-81b3-c10a36f6c1ff
+
 --> vitual environment create
 python3 -m venv venv
 
