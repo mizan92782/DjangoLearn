@@ -5,6 +5,10 @@ https://chatgpt.com/share/68661f92-0240-8005-b3e8-92a7b8bc3c17
 https://chatgpt.com/share/6866ce63-5e28-8005-9a6f-3fd577d45628
 
 
+//*** very very imp: model created realation method:
+https://chatgpt.com/share/6867fb70-8838-8005-9d4a-b308ade0c506
+
+
 
 //*** middleware
 middle is processiing unit  between request and response,

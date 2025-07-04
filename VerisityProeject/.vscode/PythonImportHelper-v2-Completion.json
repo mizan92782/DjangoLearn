@@ -32,6 +32,22 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -129,11 +145,115 @@
         "documentation": {}
     },
     {
+        "label": "MiddlewareMixin",
+        "importPath": "django.utils.deprecation",
+        "description": "django.utils.deprecation",
+        "isExtraImport": true,
+        "detail": "django.utils.deprecation",
+        "documentation": {}
+    },
+    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.db",
         "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
         "detail": "django.db",
         "documentation": {}
     },
@@ -170,11 +290,35 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -276,6 +420,14 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -329,6 +481,15 @@
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -450,6 +611,15 @@
         "documentation": {}
     },
     {
+        "label": "SimpleMiddleware",
+        "kind": 6,
+        "importPath": "university.authentication.middlewares",
+        "description": "university.authentication.middlewares",
+        "peekOfCode": "class SimpleMiddleware(MiddlewareMixin):\n    def process_request(self, request):\n        print(\"Request Middleware Active\")\n        return None\n    def process_response(self, request, response):\n        print(\"🟢 Response Middleware Active\")\n        return response",
+        "detail": "university.authentication.middlewares",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "university.authentication.urls",
@@ -515,6 +685,150 @@
     {
         "label": "Migration",
         "kind": 6,
+        "importPath": "university.relation.migrations.0001_initial",
+        "description": "university.relation.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('students', '0001_initial'),\n        ('teachers', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Relation',\n            fields=[",
+        "detail": "university.relation.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.relation.migrations.0002_relation_student_batch_relation_teacher_status",
+        "description": "university.relation.migrations.0002_relation_student_batch_relation_teacher_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('relation', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='relation',\n            name='student_batch',\n            field=models.CharField(blank=True, max_length=20),\n        ),",
+        "detail": "university.relation.migrations.0002_relation_student_batch_relation_teacher_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.relation.migrations.0003_relationonetomany",
+        "description": "university.relation.migrations.0003_relationonetomany",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('relation', '0002_relation_student_batch_relation_teacher_status'),\n        ('students', '0001_initial'),\n        ('teachers', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='RelationOneToMany',\n            fields=[",
+        "detail": "university.relation.migrations.0003_relationonetomany",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.relation.migrations.0004_alter_relationonetomany_student_and_more",
+        "description": "university.relation.migrations.0004_alter_relationonetomany_student_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('relation', '0003_relationonetomany'),\n        ('students', '0001_initial'),\n        ('teachers', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='relationonetomany',\n            name='student',",
+        "detail": "university.relation.migrations.0004_alter_relationonetomany_student_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.relation.migrations.0005_rename_relationonetomany_relationmanytoone",
+        "description": "university.relation.migrations.0005_rename_relationonetomany_relationmanytoone",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('relation', '0004_alter_relationonetomany_student_and_more'),\n        ('students', '0001_initial'),\n        ('teachers', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='RelationOneToMany',\n            new_name='RelationManyToOne',",
+        "detail": "university.relation.migrations.0005_rename_relationonetomany_relationmanytoone",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.relation.migrations.0006_relationmanytomany",
+        "description": "university.relation.migrations.0006_relationmanytomany",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('relation', '0005_rename_relationonetomany_relationmanytoone'),\n        ('students', '0001_initial'),\n        ('teachers', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='RelationManyToMany',\n            fields=[",
+        "detail": "university.relation.migrations.0006_relationmanytomany",
+        "documentation": {}
+    },
+    {
+        "label": "RelationAdmin",
+        "kind": 6,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "class RelationAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'student', 'teacher', 'course','student_batch', 'teacher_status')\n@admin.register(RelationManyToOne)\nclass RelationManyToOneAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')\n@admin.register(RelationManyToMany)\nclass RelationManyToManyAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "RelationManyToOneAdmin",
+        "kind": 6,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "class RelationManyToOneAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')\n@admin.register(RelationManyToMany)\nclass RelationManyToManyAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "RelationManyToManyAdmin",
+        "kind": 6,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "class RelationManyToManyAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "\tlist_display",
+        "kind": 5,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "\tlist_display = ('id', 'student', 'teacher', 'course','student_batch', 'teacher_status')\n@admin.register(RelationManyToOne)\nclass RelationManyToOneAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')\n@admin.register(RelationManyToMany)\nclass RelationManyToManyAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "\tlist_display",
+        "kind": 5,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')\n@admin.register(RelationManyToMany)\nclass RelationManyToManyAdmin(admin.ModelAdmin):\n\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "\tlist_display",
+        "kind": 5,
+        "importPath": "university.relation.admin",
+        "description": "university.relation.admin",
+        "peekOfCode": "\tlist_display = ('id', 'teacher',  'student','course','student_batch', 'teacher_status')",
+        "detail": "university.relation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "RelationConfig",
+        "kind": 6,
+        "importPath": "university.relation.apps",
+        "description": "university.relation.apps",
+        "peekOfCode": "class RelationConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'relation'",
+        "detail": "university.relation.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Relation",
+        "kind": 6,
+        "importPath": "university.relation.models",
+        "description": "university.relation.models",
+        "peekOfCode": "class Relation(models.Model):\n    student = models.OneToOneField('students.Student', on_delete=models.CASCADE)\n    teacher = models.OneToOneField('teachers.Teacher', on_delete=models.CASCADE)\n    course = models.CharField(max_length=100)\n    student_batch = models.CharField(max_length=20, blank=True)\n    teacher_status = models.CharField(max_length=100, blank=True)\n     # for automatically setting the student batch and teacher status\n    def save(self, *args, **kwargs):\n        if self.student:\n            self.student_batch = self.student.batch",
+        "detail": "university.relation.models",
+        "documentation": {}
+    },
+    {
+        "label": "RelationManyToOne",
+        "kind": 6,
+        "importPath": "university.relation.models",
+        "description": "university.relation.models",
+        "peekOfCode": "class RelationManyToOne(models.Model):\n    teacher = models.ForeignKey('teachers.Teacher', on_delete=models.CASCADE)\n    student = models.OneToOneField('students.Student', on_delete=models.CASCADE)\n    course = models.CharField(max_length=100)\n    student_batch = models.CharField(max_length=20, blank=True)\n    teacher_status = models.CharField(max_length=100, blank=True)\n     # for automatically setting the student batch and teacher status\n    def save(self, *args, **kwargs):\n        if self.student:\n            self.student_batch = self.student.batch",
+        "detail": "university.relation.models",
+        "documentation": {}
+    },
+    {
+        "label": "RelationManyToMany",
+        "kind": 6,
+        "importPath": "university.relation.models",
+        "description": "university.relation.models",
+        "peekOfCode": "class RelationManyToMany(models.Model):\n    teacher = models.ForeignKey('teachers.Teacher', on_delete=models.CASCADE)\n    student = models.ForeignKey('students.Student', on_delete=models.CASCADE)\n    course = models.CharField(max_length=100)\n    student_batch = models.CharField(max_length=20, blank=True)\n    teacher_status = models.CharField(max_length=100, blank=True)\n     # for automatically setting the student batch and teacher status\n    def save(self, *args, **kwargs):\n        if self.student:\n            self.student_batch = self.student.batch",
+        "detail": "university.relation.models",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
         "importPath": "university.students.migrations.0001_initial",
         "description": "university.students.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('first_name', models.CharField(max_length=30)),",
@@ -526,7 +840,7 @@
         "kind": 6,
         "importPath": "university.students.admin",
         "description": "university.students.admin",
-        "peekOfCode": "class StudentAdmin(admin.ModelAdmin):\n    list_display = ('first_name', 'last_name', 'batch')\n# Register your models here.\nadmin.site.register(Student, StudentAdmin)  # Assuming 'Student' is the model you want to register",
+        "peekOfCode": "class StudentAdmin(admin.ModelAdmin):\n    list_display = ('id','first_name', 'last_name', 'batch')\n# Register your models here.\nadmin.site.register(Student, StudentAdmin)  # Assuming 'Student' is the model you want to register",
         "detail": "university.students.admin",
         "documentation": {}
     },
@@ -607,12 +921,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.teachers.migrations.0001_initial",
+        "description": "university.teachers.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Teacher',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('first_name', models.CharField(max_length=50)),",
+        "detail": "university.teachers.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "TeacherAdmin",
+        "kind": 6,
+        "importPath": "university.teachers.admin",
+        "description": "university.teachers.admin",
+        "peekOfCode": "class TeacherAdmin(admin.ModelAdmin):\n    list_display = ('id', 'first_name', 'last_name', 'department', 'status')",
+        "detail": "university.teachers.admin",
+        "documentation": {}
+    },
+    {
         "label": "TeacherConfig",
         "kind": 6,
         "importPath": "university.teachers.apps",
         "description": "university.teachers.apps",
         "peekOfCode": "class TeacherConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'teachers'",
         "detail": "university.teachers.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "university.teachers.models",
+        "description": "university.teachers.models",
+        "peekOfCode": "class Teacher(models.Model):\n    first_name = models.CharField(max_length=50)\n    last_name = models.CharField(max_length=50)\n    department = models.CharField(max_length=100)\n    status = models.CharField(max_length=20)\n    def __str__(self):\n        return f\"{self.first_name} {self.last_name}\"",
+        "detail": "university.teachers.models",
         "documentation": {}
     },
     {
@@ -683,7 +1024,7 @@
         "kind": 5,
         "importPath": "university.university.settings",
         "description": "university.university.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'university.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'authentication.middlewares.SimpleMiddleware',  # Custom middleware for logging requests and responses\n]",
         "detail": "university.university.settings",
         "documentation": {}
     },
