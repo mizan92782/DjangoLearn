@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

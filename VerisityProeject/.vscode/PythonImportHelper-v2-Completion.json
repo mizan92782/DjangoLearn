@@ -1,5 +1,246 @@
 [
     {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -69,6 +310,305 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "django.urls",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "django.http",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.http",
+        "description": "django.http",
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "django.shortcuts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectView",
+        "importPath": "django.views.generic.base",
+        "description": "django.views.generic.base",
+        "isExtraImport": true,
+        "detail": "django.views.generic.base",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectView",
+        "importPath": "django.views.generic.base",
+        "description": "django.views.generic.base",
+        "isExtraImport": true,
+        "detail": "django.views.generic.base",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic.list",
+        "description": "django.views.generic.list",
+        "isExtraImport": true,
+        "detail": "django.views.generic.list",
         "documentation": {}
     },
     {
@@ -153,240 +693,6 @@
         "documentation": {}
     },
     {
-        "label": "django.db",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db",
-        "description": "django.db",
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "django.urls",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -401,54 +707,6 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -493,14 +751,6 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
         "label": "ValidationError",
         "importPath": "django.forms",
         "description": "django.forms",
@@ -514,23 +764,6 @@
         "description": "students",
         "isExtraImport": true,
         "detail": "students",
-        "documentation": {}
-    },
-    {
-        "label": "django.http",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.http",
-        "description": "django.http",
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -581,6 +814,105 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.CBV.migrations.0001_initial",
+        "description": "university.CBV.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Friends',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('first_name', models.CharField(max_length=100)),",
+        "detail": "university.CBV.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "friendAdmin",
+        "kind": 6,
+        "importPath": "university.CBV.admin",
+        "description": "university.CBV.admin",
+        "peekOfCode": "class friendAdmin(admin.ModelAdmin):\n   list_display = ('id', 'first_name', 'last_name', 'home', 'email')",
+        "detail": "university.CBV.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CbvConfig",
+        "kind": 6,
+        "importPath": "university.CBV.apps",
+        "description": "university.CBV.apps",
+        "peekOfCode": "class CbvConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'CBV'",
+        "detail": "university.CBV.apps",
+        "documentation": {}
+    },
+    {
+        "label": "FriendsFrom",
+        "kind": 6,
+        "importPath": "university.CBV.forms",
+        "description": "university.CBV.forms",
+        "peekOfCode": "class FriendsFrom(forms.ModelForm):\n  class Meta:\n    model=models.friends\n    fields=['first_name', 'last_name', 'home', 'email']",
+        "detail": "university.CBV.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Friends",
+        "kind": 6,
+        "importPath": "university.CBV.models",
+        "description": "university.CBV.models",
+        "peekOfCode": "class Friends(models.Model):\n   first_name=models.CharField(max_length=100)\n   last_name=models.CharField(max_length=100)\n   home=models.CharField(max_length=100)\n   email=models.EmailField(max_length=100, unique=True)",
+        "detail": "university.CBV.models",
+        "documentation": {}
+    },
+    {
+        "label": "simpleCBV",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class simpleCBV(View):\n  def get(self,request):\n    print(\"This is a simple CBV GET request.\")\n    return HttpResponse(\"Hello, this is a simple CBV response.\")\n  def post(self,request):    \n    return HttpResponse(\"This is a POST request response from a simple CBV.\")\n# template cbv\nclass templeteCVB(TemplateView):\n    #show this template when this view is called:must be in the templates folder\n    template_name = \"CBV/templete.html\" # Specify the template to be used",
+        "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "templeteCVB",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class templeteCVB(TemplateView):\n    #show this template when this view is called:must be in the templates folder\n    template_name = \"CBV/templete.html\" # Specify the template to be used\n    '''\n     1. first get show wellcame message\n     2.after submit post will repalce the message by given name in templet\n     ** by using it it very easy to change the templete **\n    '''\n    def get(self, request, *args, **kwargs):\n        # Handle GET request",
+        "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "DynamicRedirectView",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class DynamicRedirectView(RedirectView):\n    permanent = False\n    def get_redirect_url(self, *args, **kwargs):\n        user = self.request.user\n        if user.is_authenticated:\n          # go to admin paned id it be a user\n            if user.is_superuser:\n                return '/admin/'\n              #for other user if uer not be a admin\n            else:",
+        "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "FriendsCreateView",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class FriendsCreateView(CreateView):\n    model = Friends  # Assuming you have a model named Friends\n    template_name = \"CBV/student_create.html\"\n    fields = ['first_name', 'last_name', 'home', 'email'] \n    #! using this i have to give full path ,but if use reverse_lazy i can use the name of the url\n    #success_url='list_view' \n    success_url = reverse_lazy('list_view')\nfrom django.views.generic.list import ListView\nclass FriedsListView(ListView):\n    model = Friends",
+        "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "FriedsListView",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class FriedsListView(ListView):\n    model = Friends\n    context_object_name = 'info'\n    template_name='CBV/list_view.html'\nfrom django.views.generic.edit import UpdateView\nclass FriendsUpdateView(UpdateView):\n    model = Friends  # Assuming you have a model named Friends\n    template_name = \"CBV/friend_update.html\"\n    fields = ['first_name', 'last_name', 'home', 'email'] \n    #! using this i have to give full path ,but if use reverse_lazy i can use the name of the url",
+        "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "FriendsUpdateView",
+        "kind": 6,
+        "importPath": "university.CBV.views",
+        "description": "university.CBV.views",
+        "peekOfCode": "class FriendsUpdateView(UpdateView):\n    model = Friends  # Assuming you have a model named Friends\n    template_name = \"CBV/friend_update.html\"\n    fields = ['first_name', 'last_name', 'home', 'email'] \n    #! using this i have to give full path ,but if use reverse_lazy i can use the name of the url\n    #success_url='list_view' \n    success_url = reverse_lazy('list_view')",
+        "detail": "university.CBV.views",
         "documentation": {}
     },
     {
@@ -885,7 +1217,7 @@
         "kind": 2,
         "importPath": "university.students.views",
         "description": "university.students.views",
-        "peekOfCode": "def home(request):\n    \"\"\"\n    Render the home page for the students section.\n    \"\"\"\n    now = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    return render(request, 'student/student_home.html',{'time':now})\n# input taken from the user\ndef inputStudent(request):\n    #if user clicks submit button\n    if request.method=='POST':",
+        "peekOfCode": "def home(request):\n    \"\"\"\n    Render the home page for the students section.\n    \"\"\"\n    user=request.user\n    return render(request, 'student/student_home.html',{'user':user})\n# input taken from the user\ndef inputStudent(request):\n    #if user clicks submit button\n    if request.method=='POST':",
         "detail": "university.students.views",
         "documentation": {}
     },
@@ -1132,7 +1464,7 @@
         "kind": 5,
         "importPath": "university.university.urls",
         "description": "university.university.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n    path('auth/', include('authentication.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n    path('auth/', include('authentication.urls')),\n    path('view/', include('view.urls')),\n    path('cbv/', include('CBV.urls')),\n]",
         "detail": "university.university.urls",
         "documentation": {}
     },
@@ -1143,6 +1475,87 @@
         "description": "university.university.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "university.university.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.view.migrations.0001_initial",
+        "description": "university.view.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Views',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.TextField(max_length=100)),",
+        "detail": "university.view.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.view.migrations.0002_remove_views_id_views_view_id_alter_views_title",
+        "description": "university.view.migrations.0002_remove_views_id_views_view_id_alter_views_title",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('view', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='views',\n            name='id',\n        ),\n        migrations.AddField(",
+        "detail": "university.view.migrations.0002_remove_views_id_views_view_id_alter_views_title",
+        "documentation": {}
+    },
+    {
+        "label": "viewsAdmin",
+        "kind": 6,
+        "importPath": "university.view.admin",
+        "description": "university.view.admin",
+        "peekOfCode": "class viewsAdmin(admin.ModelAdmin):\n  list_display = ('view_id', 'title', 'description', 'time')",
+        "detail": "university.view.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ViewConfig",
+        "kind": 6,
+        "importPath": "university.view.apps",
+        "description": "university.view.apps",
+        "peekOfCode": "class ViewConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'view'",
+        "detail": "university.view.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateForm",
+        "kind": 6,
+        "importPath": "university.view.forms",
+        "description": "university.view.forms",
+        "peekOfCode": "class UpdateForm(forms.ModelForm):\n    class Meta:\n        model = Views\n        fields = ['title', 'description']",
+        "detail": "university.view.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Views",
+        "kind": 6,
+        "importPath": "university.view.models",
+        "description": "university.view.models",
+        "peekOfCode": "class Views(models.Model):\n  view_id = models.AutoField(primary_key=True)\n  title= models.CharField(max_length=100)\n  description = models.TextField(max_length=200)\n  time=models.DateTimeField(auto_now_add=True)\n  def __str__(self):\n    return f\"{self.view_id} {self.title}\"",
+        "detail": "university.view.models",
+        "documentation": {}
+    },
+    {
+        "label": "Viewsall",
+        "kind": 2,
+        "importPath": "university.view.views",
+        "description": "university.view.views",
+        "peekOfCode": "def Viewsall(request):\n  #taking all object\n  data=Views.objects.all()\n  return django.shortcuts.render(request, 'view/allview.html', {'data': data})\n# view single instance of view model or by view_id\ndef ViewsSearch(request,view_id):\n  #taking all object\n  data=Views.objects.all().filter(view_id=view_id)\n  return django.shortcuts.render(request, 'view/allview.html', {'data': data})\n#update value",
+        "detail": "university.view.views",
+        "documentation": {}
+    },
+    {
+        "label": "ViewsSearch",
+        "kind": 2,
+        "importPath": "university.view.views",
+        "description": "university.view.views",
+        "peekOfCode": "def ViewsSearch(request,view_id):\n  #taking all object\n  data=Views.objects.all().filter(view_id=view_id)\n  return django.shortcuts.render(request, 'view/allview.html', {'data': data})\n#update value\ndef ViewsUpdate(request,view_id):\n  #taking object by view_id\n  obj = django.shortcuts.get_object_or_404(Views, view_id=view_id)\n  if request.method == 'POST':\n    form = UpdateForm(request.POST, instance=obj)",
+        "detail": "university.view.views",
+        "documentation": {}
+    },
+    {
+        "label": "ViewsUpdate",
+        "kind": 2,
+        "importPath": "university.view.views",
+        "description": "university.view.views",
+        "peekOfCode": "def ViewsUpdate(request,view_id):\n  #taking object by view_id\n  obj = django.shortcuts.get_object_or_404(Views, view_id=view_id)\n  if request.method == 'POST':\n    form = UpdateForm(request.POST, instance=obj)\n    if form.is_valid():\n      form.save()\n      #! Redirect to the viewsearch page after updating by view_id\n      return django.shortcuts.redirect('viewsearch',view_id=view_id)\n  else:",
+        "detail": "university.view.views",
         "documentation": {}
     },
     {

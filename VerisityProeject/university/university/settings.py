@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'teachers',
     'authentication',
     'relation',
+    'view',
+    'CBV',
 ]
 
 MIDDLEWARE = [

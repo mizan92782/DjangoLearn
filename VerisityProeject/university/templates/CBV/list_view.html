@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     
+    
+    {% for inf in  info %}
+      <li>{{inf.first_name}} </li>
+      <li>{{inf.last_name}} </li>
+      <li>{{ inf.home }} </li>
+      <li>{{ inf.pk }} </li>
+       
+       {% if inf.pk %}
+         <p>this will take pk value and update</p>
+         <a href="{% url 'update_view' pk=inf.pk %}">Update</a>
+
+       {% endif %}
+        
+      <!-- this optin a call updae page and pk-->
+      
+      <hr>
+    {% endfor %}
+      
+</body>
+</html>

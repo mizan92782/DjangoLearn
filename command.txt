@@ -5,10 +5,21 @@ https://chatgpt.com/share/68661f92-0240-8005-b3e8-92a7b8bc3c17
 https://chatgpt.com/share/6866ce63-5e28-8005-9a6f-3fd577d45628
 
 
+//views method:
+https://chatgpt.com/share/686917a2-e264-8005-81f4-32baad0bdfaa
+
+
+//cbv
+
+https://chatgpt.com/share/68694542-8e80-8005-aa00-54b3e9320561
+
+
+
 //*** very very imp: model created realation method:
 https://chatgpt.com/share/6867fb70-8838-8005-9d4a-b308ade0c506
 
-
+//class based view
+https://chatgpt.com/share/6868c198-0c68-8005-9b3e-ba27c17f8cd1
 
 //*** middleware
 middle is processiing unit  between request and response,

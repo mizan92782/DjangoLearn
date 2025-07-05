@@ -9,8 +9,10 @@ def home(request):
     """
     Render the home page for the students section.
     """
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    return render(request, 'student/student_home.html',{'time':now})
+    user=request.user
+    
+    
+    return render(request, 'student/student_home.html',{'user':user})
 
 
 # input taken from the user
