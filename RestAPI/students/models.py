@@ -9,7 +9,9 @@ class Students(models.Model):
     def __str__(self):
         return f"{self.name} ({self.age}) - {self.email}"
     
+    
+    
+    
     class Meta:
         #for showing order
         ordering = ['name']
-       

@@ -587,6 +587,15 @@
         "documentation": {}
     },
     {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
         "label": "django.http",
         "kind": 6,
         "isExtraImport": true,
@@ -701,12 +710,28 @@
         "documentation": {}
     },
     {
+        "label": "JSONParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
         "documentation": {}
     },
     {
@@ -962,6 +987,15 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "RestAPI.RestAPI.asgi",
@@ -1182,7 +1216,7 @@
         "kind": 6,
         "importPath": "RestAPI.students.serializer",
         "description": "RestAPI.students.serializer",
-        "peekOfCode": "class StudentsSerializer(serializers.Serializer):\n  name = serializers.CharField(max_length=100)\n  age = serializers.IntegerField()\n  email =serializers.EmailField()",
+        "peekOfCode": "class StudentsSerializer(serializers.Serializer):\n  name = serializers.CharField(max_length=100)\n  age = serializers.IntegerField()\n  email =serializers.EmailField()\n  #! ==== create a instance or insert in database\n  def create(self,validator_data):\n    return Students.objects.create(**validator_data)",
         "detail": "RestAPI.students.serializer",
         "documentation": {}
     },
@@ -1209,7 +1243,16 @@
         "kind": 2,
         "importPath": "RestAPI.students.views",
         "description": "RestAPI.students.views",
-        "peekOfCode": "def studentInfoPK(request,pk):\n    #complex data : get use for sigle object\n    students=Students.objects.get(pk=pk)\n    # simple native python data\n    # many for multiple object\n    serializer=StudentsSerializer(students)\n    # render to json\n    student_json= JSONRenderer().render(serializer.data)\n    return django.http.HttpResponse(student_json, content_type='application/json')",
+        "peekOfCode": "def studentInfoPK(request,pk):\n    #complex data : get use for sigle object\n    students=Students.objects.get(pk=pk)\n    # simple native python data\n    # many for multiple object\n    serializer=StudentsSerializer(students)\n    # render to json\n    student_json= JSONRenderer().render(serializer.data)\n    return django.http.HttpResponse(student_json, content_type='application/json')\n#! ==== create a new student : creae api for add data in database",
+        "detail": "RestAPI.students.views",
+        "documentation": {}
+    },
+    {
+        "label": "createStudent",
+        "kind": 2,
+        "importPath": "RestAPI.students.views",
+        "description": "RestAPI.students.views",
+        "peekOfCode": "def createStudent(request):\n    if request.method == 'POST':\n        # get json data from request\n        json_data = request.body\n        # convert json data to stream\n        stream = io.BytesIO(json_data)\n        # stream to python data\n        python_data = JSONParser().parse(stream)\n        # ptocess the data using serializer\n        serializer = StudentsSerializer(data=python_data)",
         "detail": "RestAPI.students.views",
         "documentation": {}
     },
@@ -1974,12 +2017,30 @@
         "documentation": {}
     },
     {
-        "label": "response",
-        "kind": 5,
-        "importPath": "restApi",
-        "description": "restApi",
-        "peekOfCode": "response = requests.get(url=URL)\n#! 3. extract data from response\ndata=response.json()\n#! 4. show and print data\nprint(data)",
-        "detail": "restApi",
+        "label": "serialzation",
+        "kind": 2,
+        "importPath": "ClientSide",
+        "description": "ClientSide",
+        "peekOfCode": "def serialzation():\n  #! 1. hit api url to get data,this url provides data\n  URL=\"http://127.0.0.1:8000/students/\"\n  #! 2. get response : data\n  response = requests.get(url=URL)\n  #! 3. extract data from response\n  data=response.json()\n  #! 4. show and print data\n  print(data)\n#!  client side",
+        "detail": "ClientSide",
+        "documentation": {}
+    },
+    {
+        "label": "deserialization",
+        "kind": 2,
+        "importPath": "ClientSide",
+        "description": "ClientSide",
+        "peekOfCode": "def deserialization():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)",
+        "detail": "ClientSide",
+        "documentation": {}
+    },
+    {
+        "label": "deserialization",
+        "kind": 2,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "def deserialization():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  # convert ot json\n  data_json=json.dumps(data)",
+        "detail": "tempCodeRunnerFile",
         "documentation": {}
     }
 ]
