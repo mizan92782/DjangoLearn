@@ -735,6 +735,22 @@
         "documentation": {}
     },
     {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -1216,7 +1232,7 @@
         "kind": 6,
         "importPath": "RestAPI.students.serializer",
         "description": "RestAPI.students.serializer",
-        "peekOfCode": "class StudentsSerializer(serializers.Serializer):\n  name = serializers.CharField(max_length=100)\n  age = serializers.IntegerField()\n  email =serializers.EmailField()\n  #! ==== create a instance or insert in database\n  def create(self,validator_data):\n    return Students.objects.create(**validator_data)\n  #! ========= update instance data\n  def update(self,instance,validate_data):\n    instance.name = validate_data.get('name',instance.name)",
+        "peekOfCode": "class StudentsSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = Students\n    fields = ['id', 'name', 'age', 'email']  # Include all fields you want to serialize",
         "detail": "RestAPI.students.serializer",
         "documentation": {}
     },
@@ -1252,7 +1268,7 @@
         "kind": 2,
         "importPath": "RestAPI.students.views",
         "description": "RestAPI.students.views",
-        "peekOfCode": "def createStudent(request):\n    if request.method == 'POST':\n        # get json data from request\n        json_data = request.body\n        # convert json data to stream\n        stream = io.BytesIO(json_data)\n        # stream to python data\n        python_data = JSONParser().parse(stream)\n        # ptocess the data using serializer\n        serializer = StudentsSerializer(data=python_data)",
+        "peekOfCode": "def createStudent(request, pk=None):\n    if request.method == 'GET':\n        if pk is not None:\n            #complext data\n            student = Students.objects.get(pk=pk)\n            # simple native python data\n            serializer= StudentsSerializer(student)\n            return Response(serializer.data)\n        else:\n            # complex data : get use for all object",
         "detail": "RestAPI.students.views",
         "documentation": {}
     },
@@ -2021,7 +2037,7 @@
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def GET():\n  #! 1. hit api url to get data,this url provides data\n  URL=\"http://127.0.0.1:8000/students/\"\n  #! 2. get response : data\n  response = requests.get(url=URL)\n  #! 3. extract data from response\n  data=response.json()  # indent for pretty printing)\n  #! 4. show and print data\n  print(data)\n#!  client side",
+        "peekOfCode": "def GET():\n  #! 1. hit api url to get data,this url provides data\n  URL=\"http://127.0.0.1:8000/students/create\"\n  #! 2. get response : data\n  response = requests.get(url=URL)\n  #! 3. extract data from response\n  data=response.json()  # indent for pretty printing)\n  #! 4. show and print data\n  print(data)\n#!  client side",
         "detail": "ClientSide",
         "documentation": {}
     },
@@ -2030,7 +2046,7 @@
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def POST():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)",
+        "peekOfCode": "def POST():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubin',\n    'age'  : 67,\n    'email' : 'rubin77@gmail.com'\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)",
         "detail": "ClientSide",
         "documentation": {}
     },
@@ -2039,7 +2055,7 @@
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def PUT():\n  # data put to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'id': 2,\n    'age'  : 20,\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)\n  res = requests.put(url=URL, data=data_json, headers=headers)",
+        "peekOfCode": "def PUT():\n  # data put to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'id': 2,\n    'age'  : 50,\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)\n  res = requests.put(url=URL, data=data_json, headers=headers)",
         "detail": "ClientSide",
         "documentation": {}
     },
@@ -2048,7 +2064,7 @@
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def DELETE():\n  URL='http://127.0.0.1:8000/students/create'\n  data={'id': 2}\n  json_data=json.dumps(data)\n  headers = {'Content-Type': 'application/json'}\n  res =requests.delete(url=URL, data=json_data, headers=headers)\nPUT()\nGET()\nprint(\"========================================\")",
+        "peekOfCode": "def DELETE():\n  URL='http://127.0.0.1:8000/students/create'\n  data={'id': 6}\n  json_data=json.dumps(data)\n  headers = {'Content-Type': 'application/json'}\n  res =requests.delete(url=URL, data=json_data, headers=headers)\n  print(\"Delete Response:\", res.text)\nprint(\"========================================\")\nGET()",
         "detail": "ClientSide",
         "documentation": {}
     },
@@ -2059,6 +2075,24 @@
         "description": "tempCodeRunnerFile",
         "peekOfCode": "def deserialization():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  # convert ot json\n  data_json=json.dumps(data)",
         "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "GET",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def GET():\n    try:\n        response = requests.get(URL)\n        response.raise_for_status()\n        print(response.json())\n    except requests.exceptions.ConnectionError:\n        print(\"❌ Failed to connect to the server. Is Django running?\")\n    except requests.exceptions.RequestException as e:\n        print(f\"❌ Some error occurred: {e}\")\nGET()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "URL = \"http://127.0.0.1:8000/students/\"\ndef GET():\n    try:\n        response = requests.get(URL)\n        response.raise_for_status()\n        print(response.json())\n    except requests.exceptions.ConnectionError:\n        print(\"❌ Failed to connect to the server. Is Django running?\")\n    except requests.exceptions.RequestException as e:\n        print(f\"❌ Some error occurred: {e}\")",
+        "detail": "test",
         "documentation": {}
     }
 ]

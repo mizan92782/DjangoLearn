@@ -5,8 +5,8 @@ import requests
 def GET():
   
   #! 1. hit api url to get data,this url provides data
-  URL="http://127.0.0.1:8000/students/"
-
+  URL="http://127.0.0.1:8000/students/create"
+ 
   #! 2. get response : data
   response = requests.get(url=URL)
 
@@ -31,9 +31,9 @@ def POST():
  
  
   data={
-    'name' : 'Rubi',
-    'age'  : 8,
-    'email' : 'rubi77@gmail.com'
+    'name' : 'Rubin',
+    'age'  : 67,
+    'email' : 'rubin77@gmail.com'
   }
 
   headers = {'Content-Type': 'application/json'}
@@ -58,7 +58,7 @@ def PUT():
 
   data={
     'id': 2,
-    'age'  : 20,
+    'age'  : 50,
     
   }
 
@@ -78,22 +78,14 @@ def DELETE():
   
   URL='http://127.0.0.1:8000/students/create'
   
-  data={'id': 2}
+  data={'id': 6}
   
   json_data=json.dumps(data)
   headers = {'Content-Type': 'application/json'}
   
   res =requests.delete(url=URL, data=json_data, headers=headers)
+  print("Delete Response:", res.text)
   
-  
-  
-PUT()
 
-GET()
-
-print("========================================")
-
-
-DELETE()
 print("========================================")
 GET()

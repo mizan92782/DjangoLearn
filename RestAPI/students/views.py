@@ -9,6 +9,9 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 import requests
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
 # Create your views here
 
 
@@ -70,82 +73,43 @@ def studentInfoPK(request,pk):
 ''' csrf : token must be decorate'''
 
 
-@csrf_exempt
-def createStudent(request):
+@api_view(['GET', 'POST', 'PUT','PATCH','DELETE'])
+def createStudent(request, pk=None):
+    if request.method == 'GET':
+        if pk is not None:
+            #complext data
+            student = Students.objects.get(pk=pk)
+            # simple native python data
+            serializer= StudentsSerializer(student)
+            return Response(serializer.data)
+    
+        else:
+            # complex data : get use for all object
+            students = Students.objects.all()
+            # simple native python data
+            # many for multiple object
+            serializer = StudentsSerializer(students, many=True)
+            return Response(serializer.data)
+    
+    
     if request.method == 'POST':
-        # get json data from request
-        json_data = request.body
-        
-        # convert json data to stream
-        stream = io.BytesIO(json_data)
-        
-        # stream to python data
-        python_data = JSONParser().parse(stream)
-        
-        
-        # ptocess the data using serializer
-        serializer = StudentsSerializer(data=python_data)
-        
-        
-        # validation data
+        serializer = StudentsSerializer(data=request.data)
         if serializer.is_valid():
-            
-            # save data in database
             serializer.save()
-            res={
-                'msg': 'Data created successfully',
-                'data': serializer.data
-            }
-            
-            json_data = JSONRenderer().render(res)
-            return django.http.HttpResponse(json_data, content_type='application/json')
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
         
-        # show error if not valid
-        json_data= JSONRenderer().render(serializer.errors)
-        return django.http.HttpResponse(json_data, content_type='application/json', status=400)
-    
-    
     
     
     if request.method == 'PUT':
-        jsondata=request.body
-        stream= io.BytesIO(jsondata)
-        python_data= JSONParser().parse(stream)
-        
-        # catch data by id
-        id = python_data.get('id')
-        studentId= Students.objects.get(id=id)
-        
-        # serializer
-        serializer= StudentsSerializer(studentId,data=python_data,partial=True)
-        
+        student = Students.objects.get(pk=pk)
+        serializer = StudentsSerializer(student, data=request.data,partial=True)
         if serializer.is_valid():
             serializer.save()
-            res={
-                'msg': 'Data created successfully',
-                'data': serializer.data
-            }
-            
-            json_data = JSONRenderer().render(res)
-            return django.http.HttpResponse(json_data, content_type='application/json')
-        
-         # show error if not valid
-        jsondata= JSONRenderer().render(serializer.errors)
-        return django.http.HttpResponse(jsondata, content_type='application/json', status=400)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
     
     if request.method == 'DELETE':
-        json_data =request.body
-        stream = io.BytesIO(json_data)
-        python_data = JSONParser().parse(stream)
-        id = python_data.get('id')
-        
-        getid= Students.objects.get(id=id)
-        getid.delete()
-        res = {
-            'msg': 'Data deleted successfully',
-            'id': id
-        }
-        
-        json_data = JSONRenderer().render(res)
-        return django.http.HttpResponse(json_data, content_type='application/json')
-    return django.http.HttpResponse("request")  # Method Not Allowed for non-POST requests
+        student = Students.objects.get(pk=pk)
+        student.delete()
+        return Response(status=204)
