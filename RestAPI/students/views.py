@@ -104,4 +104,48 @@ def createStudent(request):
         json_data= JSONRenderer().render(serializer.errors)
         return django.http.HttpResponse(json_data, content_type='application/json', status=400)
     
+    
+    
+    
+    if request.method == 'PUT':
+        jsondata=request.body
+        stream= io.BytesIO(jsondata)
+        python_data= JSONParser().parse(stream)
+        
+        # catch data by id
+        id = python_data.get('id')
+        studentId= Students.objects.get(id=id)
+        
+        # serializer
+        serializer= StudentsSerializer(studentId,data=python_data,partial=True)
+        
+        if serializer.is_valid():
+            serializer.save()
+            res={
+                'msg': 'Data created successfully',
+                'data': serializer.data
+            }
+            
+            json_data = JSONRenderer().render(res)
+            return django.http.HttpResponse(json_data, content_type='application/json')
+        
+         # show error if not valid
+        jsondata= JSONRenderer().render(serializer.errors)
+        return django.http.HttpResponse(jsondata, content_type='application/json', status=400)
+    
+    if request.method == 'DELETE':
+        json_data =request.body
+        stream = io.BytesIO(json_data)
+        python_data = JSONParser().parse(stream)
+        id = python_data.get('id')
+        
+        getid= Students.objects.get(id=id)
+        getid.delete()
+        res = {
+            'msg': 'Data deleted successfully',
+            'id': id
+        }
+        
+        json_data = JSONRenderer().render(res)
+        return django.http.HttpResponse(json_data, content_type='application/json')
     return django.http.HttpResponse("request")  # Method Not Allowed for non-POST requests

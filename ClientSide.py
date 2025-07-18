@@ -2,7 +2,7 @@ import json
 import requests
 
 
-def serialzation():
+def GET():
   
   #! 1. hit api url to get data,this url provides data
   URL="http://127.0.0.1:8000/students/"
@@ -13,7 +13,7 @@ def serialzation():
 
 
   #! 3. extract data from response
-  data=response.json()
+  data=response.json()  # indent for pretty printing)
 
   #! 4. show and print data
   print(data)
@@ -23,7 +23,7 @@ def serialzation():
 
 #!  client side
 
-def deserialization():
+def POST():
   
   
   # data post to this link
@@ -46,7 +46,54 @@ def deserialization():
 
 
   
+  
+  
+  
+def PUT():
+  
+  
+  # data put to this link
+  URL='http://127.0.0.1:8000/students/create'
+
+
+  data={
+    'id': 2,
+    'age'  : 20,
+    
+  }
+
+  headers = {'Content-Type': 'application/json'}
+  data_json = json.dumps(data)
+
+  res = requests.put(url=URL, data=data_json, headers=headers)
+  
+  data=res.json()
+  print(data)
 
 
 
-deserialization()
+#! delete data from thired party api
+
+def DELETE():
+  
+  URL='http://127.0.0.1:8000/students/create'
+  
+  data={'id': 2}
+  
+  json_data=json.dumps(data)
+  headers = {'Content-Type': 'application/json'}
+  
+  res =requests.delete(url=URL, data=json_data, headers=headers)
+  
+  
+  
+PUT()
+
+GET()
+
+print("========================================")
+
+
+DELETE()
+print("========================================")
+GET()

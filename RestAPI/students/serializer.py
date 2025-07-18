@@ -10,4 +10,18 @@ class StudentsSerializer(serializers.Serializer):
   #! ==== create a instance or insert in database
   def create(self,validator_data):
     return Students.objects.create(**validator_data)
+  
+  
+  
+  #! ========= update instance data
+  def update(self,instance,validate_data):
+    instance.name = validate_data.get('name',instance.name)
+    instance.age = validate_data.get('age',instance.age)
+    instance.email = validate_data.get('email',instance.email)
+    
+    #save instace
+    instance.save()
+    # return data
+    return instance
+    
     

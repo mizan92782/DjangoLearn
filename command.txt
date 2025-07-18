@@ -1,6 +1,10 @@
 // django roadmap
 https://chatgpt.com/share/68661f92-0240-8005-b3e8-92a7b8bc3c17
 
+// rest apt:
+https://chatgpt.com/share/686f254f-e718-8005-aac2-a3895cbe73f0
+
+
 //request methods :
 https://chatgpt.com/share/6866ce63-5e28-8005-9a6f-3fd577d45628
 

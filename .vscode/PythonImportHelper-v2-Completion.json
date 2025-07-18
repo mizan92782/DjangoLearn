@@ -1216,7 +1216,7 @@
         "kind": 6,
         "importPath": "RestAPI.students.serializer",
         "description": "RestAPI.students.serializer",
-        "peekOfCode": "class StudentsSerializer(serializers.Serializer):\n  name = serializers.CharField(max_length=100)\n  age = serializers.IntegerField()\n  email =serializers.EmailField()\n  #! ==== create a instance or insert in database\n  def create(self,validator_data):\n    return Students.objects.create(**validator_data)",
+        "peekOfCode": "class StudentsSerializer(serializers.Serializer):\n  name = serializers.CharField(max_length=100)\n  age = serializers.IntegerField()\n  email =serializers.EmailField()\n  #! ==== create a instance or insert in database\n  def create(self,validator_data):\n    return Students.objects.create(**validator_data)\n  #! ========= update instance data\n  def update(self,instance,validate_data):\n    instance.name = validate_data.get('name',instance.name)",
         "detail": "RestAPI.students.serializer",
         "documentation": {}
     },
@@ -2017,20 +2017,38 @@
         "documentation": {}
     },
     {
-        "label": "serialzation",
+        "label": "GET",
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def serialzation():\n  #! 1. hit api url to get data,this url provides data\n  URL=\"http://127.0.0.1:8000/students/\"\n  #! 2. get response : data\n  response = requests.get(url=URL)\n  #! 3. extract data from response\n  data=response.json()\n  #! 4. show and print data\n  print(data)\n#!  client side",
+        "peekOfCode": "def GET():\n  #! 1. hit api url to get data,this url provides data\n  URL=\"http://127.0.0.1:8000/students/\"\n  #! 2. get response : data\n  response = requests.get(url=URL)\n  #! 3. extract data from response\n  data=response.json()  # indent for pretty printing)\n  #! 4. show and print data\n  print(data)\n#!  client side",
         "detail": "ClientSide",
         "documentation": {}
     },
     {
-        "label": "deserialization",
+        "label": "POST",
         "kind": 2,
         "importPath": "ClientSide",
         "description": "ClientSide",
-        "peekOfCode": "def deserialization():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)",
+        "peekOfCode": "def POST():\n  # data post to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'name' : 'Rubi',\n    'age'  : 8,\n    'email' : 'rubi77@gmail.com'\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)",
+        "detail": "ClientSide",
+        "documentation": {}
+    },
+    {
+        "label": "PUT",
+        "kind": 2,
+        "importPath": "ClientSide",
+        "description": "ClientSide",
+        "peekOfCode": "def PUT():\n  # data put to this link\n  URL='http://127.0.0.1:8000/students/create'\n  data={\n    'id': 2,\n    'age'  : 20,\n  }\n  headers = {'Content-Type': 'application/json'}\n  data_json = json.dumps(data)\n  res = requests.put(url=URL, data=data_json, headers=headers)",
+        "detail": "ClientSide",
+        "documentation": {}
+    },
+    {
+        "label": "DELETE",
+        "kind": 2,
+        "importPath": "ClientSide",
+        "description": "ClientSide",
+        "peekOfCode": "def DELETE():\n  URL='http://127.0.0.1:8000/students/create'\n  data={'id': 2}\n  json_data=json.dumps(data)\n  headers = {'Content-Type': 'application/json'}\n  res =requests.delete(url=URL, data=json_data, headers=headers)\nPUT()\nGET()\nprint(\"========================================\")",
         "detail": "ClientSide",
         "documentation": {}
     },
