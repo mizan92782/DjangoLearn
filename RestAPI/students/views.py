@@ -8,9 +8,10 @@ from .models import Students
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 import requests
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.generics import GenericAPIView
+from rest_framework.mixins import ListModelMixin, CreateModelMixin
 
 # Create your views here
 
@@ -69,13 +70,10 @@ def studentInfoPK(request,pk):
 
 
 
-#! ==== create a new student : creae api for add data in database
-''' csrf : token must be decorate'''
 
 
-@api_view(['GET', 'POST', 'PUT','PATCH','DELETE'])
-def createStudent(request, pk=None):
-    if request.method == 'GET':
+class createStudent(APIView):
+    def get(self, request, pk=None,format=None):
         if pk is not None:
             #complext data
             student = Students.objects.get(pk=pk)
@@ -91,17 +89,15 @@ def createStudent(request, pk=None):
             serializer = StudentsSerializer(students, many=True)
             return Response(serializer.data)
     
-    
-    if request.method == 'POST':
+    def post(self, request, pk=None,format=None):
         serializer = StudentsSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
+            print("a new data insert")
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
-        
     
-    
-    if request.method == 'PUT':
+    def put(self, request, pk,format=None):
         student = Students.objects.get(pk=pk)
         serializer = StudentsSerializer(student, data=request.data,partial=True)
         if serializer.is_valid():
@@ -109,7 +105,47 @@ def createStudent(request, pk=None):
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
     
-    if request.method == 'DELETE':
-        student = Students.objects.get(pk=pk)
-        student.delete()
-        return Response(status=204)
+    
+
+
+#! # Create a mixin for handling student data ap8i
+from rest_framework.generics import GenericAPIView
+from rest_framework.mixins import ListModelMixin, CreateModelMixin, UpdateModelMixin, DestroyModelMixin, RetrieveModelMixin
+from .models import Students
+
+class StudentMixin(GenericAPIView, 
+                   ListModelMixin, 
+                   CreateModelMixin, 
+                   UpdateModelMixin, 
+                   DestroyModelMixin, 
+                   RetrieveModelMixin):
+
+    queryset = Students.objects.all()
+    serializer_class = StudentsSerializer
+
+    def get(self, request, *args, **kwargs):
+        if 'pk' in kwargs:
+            return self.retrieve(request, *args, **kwargs)  # For retrieving a single object
+        return self.list(request, *args, **kwargs)          # For listing all objects
+
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)        # Full update
+
+    def patch(self, request, *args, **kwargs):
+        return self.partial_update(request, *args, **kwargs)  # Partial update
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+
+
+
+
+#!========== model view set,,easy ============
+from rest_framework.viewsets import ModelViewSet
+
+class StudentViewSet(ModelViewSet):
+    queryset = Students.objects.all()
+    serializer_class = StudentsSerializer

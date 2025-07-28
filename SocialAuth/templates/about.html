@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+  </head>
+
+  <body>
+
+    {% if request.user.is_authenticated %}
+
+    {% for account in request.user.socialaccount_set.all %}
+    {% if account.provider == "google" %}
+    {% if account.extra_data.picture %}
+    <img src="{{ account.extra_data.picture }}" alt="Profile Image" width="100">
+    {% endif %}
+    <p>Google ID: {{ account.uid }}</p>
+    <p>Email from Google: {{ account.extra_data.email }}</p>
+    <p>Name: {{ account.extra_data.name }}</p>
+    {% endif %}
+    {% endfor %}
+
+    <!-- Default Django User Info -->
+    <h2>User Information</h2>
+    <p>Username: {{ request.user.username }}</p>
+    <p>Email: {{ request.user.email }}</p>
+    <p>First Name: {{ request.user.first_name }}</p>
+    <p>Last Name: {{ request.user.last_name }}</p>
+    <p>Full Name: {{ request.user.get_full_name }}</p>
+    <p>Short Name: {{ request.user.get_short_name }}</p>
+    <p>ID: {{ request.user.id }}</p>
+    <p>PK: {{ request.user.pk }}</p>
+    <p>Is Active: {{ request.user.is_active }}</p>
+    <p>Is Staff: {{ request.user.is_staff }}</p>
+    <p>Is Superuser: {{ request.user.is_superuser }}</p>
+    <p>Last Login: {{ request.user.last_login }}</p>
+    <p>Date Joined: {{ request.user.date_joined }}</p>
+
+    <!-- Optional: Custom Profile Info -->
+    {% if request.user.profile %}
+    <h3>Profile Info</h3>
+    <p>Bio: {{ request.user.profile.bio }}</p>
+    <p>Birth Date: {{ request.user.profile.birth_date }}</p>
+    <p>Location: {{ request.user.profile.location }}</p>
+    <p>Website: <a href="{{ request.user.profile.website }}">{{ request.user.profile.website }}</a></p>
+    {% if request.user.profile.image %}
+    <img src="{{ request.user.profile.image.url }}" alt="Custom Profile Image" width="100">
+    {% endif %}
+    {% else %}
+    <p>No profile information available.</p>
+    {% endif %}
+
+    {% else %}
+    <p>No account is logged in.</p>
+    {% endif %}
+
+
+
+
+    <br>
+    <h1>logout</h1>
+    <a href="{% url 'account_logout' %}">logout</a>
+
+  </body>
+
+</html>

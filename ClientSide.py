@@ -31,9 +31,9 @@ def POST():
  
  
   data={
-    'name' : 'Rubin',
-    'age'  : 67,
-    'email' : 'rubin77@gmail.com'
+    'name' : 'Ritu',
+    'age'  : 97,
+    'email' : 'ritu57@gmail.com'
   }
 
   headers = {'Content-Type': 'application/json'}
@@ -42,7 +42,8 @@ def POST():
   response = requests.post(url=URL, data=data_json, headers=headers)
   
   print("Sent Data:", data_json)
-  print("Server Response:", response.text)
+  print("Status Code:", response.status_code)  # ✅ Shows 201 for success, 400 for bad request, etc.
+  print("Response:", response.json())
 
 
   
@@ -88,4 +89,4 @@ def DELETE():
   
 
 print("========================================")
-GET()
+POST()

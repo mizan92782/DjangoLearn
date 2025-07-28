@@ -24,4 +24,5 @@ urlpatterns = [
     path('auth/', include('authentication.urls')),
     path('view/', include('view.urls')),
     path('cbv/', include('CBV.urls')),
+    path('people/', include('ModelForm.urls')),
 ]

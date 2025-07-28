@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'relation',
     'view',
     'CBV',
+    'ModelForm',
 ]
 
 MIDDLEWARE = [

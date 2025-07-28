@@ -34,7 +34,7 @@ middle is processiing unit  between request and response,
 python3 -m venv venv
 
 --> active virtual environment
-source venv/bin/activate
+
 
 ---> Django download
 pip install django

@@ -33,6 +33,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -222,6 +246,14 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -326,6 +358,39 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -345,11 +410,11 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -411,6 +476,14 @@
     },
     {
         "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -496,6 +569,14 @@
         "isExtraImport": true,
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
         "detail": "django.shortcuts",
         "documentation": {}
     },
@@ -913,6 +994,60 @@
         "description": "university.CBV.views",
         "peekOfCode": "class FriendsUpdateView(UpdateView):\n    model = Friends  # Assuming you have a model named Friends\n    template_name = \"CBV/friend_update.html\"\n    fields = ['first_name', 'last_name', 'home', 'email'] \n    #! using this i have to give full path ,but if use reverse_lazy i can use the name of the url\n    #success_url='list_view' \n    success_url = reverse_lazy('list_view')",
         "detail": "university.CBV.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "university.ModelForm.migrations.0001_initial",
+        "description": "university.ModelForm.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='People',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "university.ModelForm.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "StudentsAdmin",
+        "kind": 6,
+        "importPath": "university.ModelForm.admin",
+        "description": "university.ModelForm.admin",
+        "peekOfCode": "class StudentsAdmin(admin.ModelAdmin):\n    class Meta:\n        model = People\n        list_display = ('name', 'age', 'address')",
+        "detail": "university.ModelForm.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ModelformConfig",
+        "kind": 6,
+        "importPath": "university.ModelForm.apps",
+        "description": "university.ModelForm.apps",
+        "peekOfCode": "class ModelformConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'ModelForm'",
+        "detail": "university.ModelForm.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleForm",
+        "kind": 6,
+        "importPath": "university.ModelForm.forms",
+        "description": "university.ModelForm.forms",
+        "peekOfCode": "class PeopleForm(forms.ModelForm):\n  class Meta:\n    model= People\n    fields = ['name', 'age', 'address']",
+        "detail": "university.ModelForm.forms",
+        "documentation": {}
+    },
+    {
+        "label": "People",
+        "kind": 6,
+        "importPath": "university.ModelForm.models",
+        "description": "university.ModelForm.models",
+        "peekOfCode": "class People(models.Model):\n    name = models.CharField(max_length=100)\n    age = models.IntegerField(required=True)\n    address = models.TextField()\n    def __str__(self):\n        return self.name",
+        "detail": "university.ModelForm.models",
+        "documentation": {}
+    },
+    {
+        "label": "Peopleview",
+        "kind": 2,
+        "importPath": "university.ModelForm.views",
+        "description": "university.ModelForm.views",
+        "peekOfCode": "def Peopleview(request):\n  context={}\n  context['form'] = PeopleForm(request.POST or None)  # Initialize the form with POST data if available\n  return render(request, 'fromhtml.html',context)",
+        "detail": "university.ModelForm.views",
         "documentation": {}
     },
     {
@@ -1464,7 +1599,7 @@
         "kind": 5,
         "importPath": "university.university.urls",
         "description": "university.university.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n    path('auth/', include('authentication.urls')),\n    path('view/', include('view.urls')),\n    path('cbv/', include('CBV.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('students/', include('students.urls')),\n    path('teachers/', include('teachers.urls')),\n    path('auth/', include('authentication.urls')),\n    path('view/', include('view.urls')),\n    path('cbv/', include('CBV.urls')),\n    path('people/', include('ModelForm.urls')),\n]",
         "detail": "university.university.urls",
         "documentation": {}
     },
