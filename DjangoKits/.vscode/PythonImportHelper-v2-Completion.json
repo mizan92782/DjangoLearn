@@ -1,0 +1,799 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "model.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "model.models",
+        "description": "model.models",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "DjangoKits.asgi",
+        "description": "DjangoKits.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "DjangoKits.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-9n6t^o7r_m4(h7uxkw4-p!9z3m=*f2e8n!%nqww&spn-vwpl+g'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-9n6t^o7r_m4(h7uxkw4-p!9z3m=*f2e8n!%nqww&spn-vwpl+g'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'model',",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'model',\n    'ModelForm',\n]",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'DjangoKits.urls'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "ROOT_URLCONF = 'DjangoKits.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR/'templates'],  # Directory for custom templates\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR/'templates'],  # Directory for custom templates\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'DjangoKits.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n#media files\nMEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n#media files\nMEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n#media files\nMEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n#media files\nMEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n#media files\nMEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'  # URL to access media files\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Directory to save uploaded files\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "DjangoKits.settings",
+        "description": "DjangoKits.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "DjangoKits.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "DjangoKits.urls",
+        "description": "DjangoKits.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]\n# Serving media files during development\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "DjangoKits.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "DjangoKits.wsgi",
+        "description": "DjangoKits.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "DjangoKits.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ModelForm.migrations.0001_initial",
+        "description": "ModelForm.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "ModelForm.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "StudentAdmin",
+        "kind": 6,
+        "importPath": "ModelForm.admin",
+        "description": "ModelForm.admin",
+        "peekOfCode": "class StudentAdmin(admin.ModelAdmin):\n  class Meta:\n    model = Student\n  list_display = ('name', 'age', 'batch')",
+        "detail": "ModelForm.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ModelformConfig",
+        "kind": 6,
+        "importPath": "ModelForm.apps",
+        "description": "ModelForm.apps",
+        "peekOfCode": "class ModelformConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'ModelForm'",
+        "detail": "ModelForm.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "ModelForm.models",
+        "description": "ModelForm.models",
+        "peekOfCode": "class Student(models.Model):\n    name = models.CharField(max_length=100)\n    age = models.IntegerField()\n    batch = models.CharField(max_length=100)    \n    def __str__(self):\n        return self.name",
+        "detail": "ModelForm.models",
+        "documentation": {}
+    },
+    {
+        "label": "TempappConfig",
+        "kind": 6,
+        "importPath": "TempApp.apps",
+        "description": "TempApp.apps",
+        "peekOfCode": "class TempappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'TempApp'",
+        "detail": "TempApp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Persons",
+        "kind": 6,
+        "importPath": "TempApp.models",
+        "description": "TempApp.models",
+        "peekOfCode": "class Persons(models.Model):\n  Name = models.CharField(max_length=20)\n  father= models.CharField(max_length=30)\n  age= models.IntegerField()\n  result= models.FloatField()",
+        "detail": "TempApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0001_initial",
+        "description": "model.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Students',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=20)),",
+        "detail": "model.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0002_students_pic_students_userpic_alter_students_batch",
+        "description": "model.migrations.0002_students_pic_students_userpic_alter_students_batch",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='students',\n            name='pic',\n            field=models.FileField(null=True, upload_to='pics/% Y/%m/%d/'),\n        ),",
+        "detail": "model.migrations.0002_students_pic_students_userpic_alter_students_batch",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0003_mans_wife",
+        "description": "model.migrations.0003_mans_wife",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0002_students_pic_students_userpic_alter_students_batch'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Mans',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=20)),",
+        "detail": "model.migrations.0003_mans_wife",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0004_womens_couples_delete_wife",
+        "description": "model.migrations.0004_womens_couples_delete_wife",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0003_mans_wife'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Womens',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=20)),",
+        "detail": "model.migrations.0004_womens_couples_delete_wife",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0005_students_group_alter_couples_husband_age_and_more",
+        "description": "model.migrations.0005_students_group_alter_couples_husband_age_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0004_womens_couples_delete_wife'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='students',\n            name='group',\n            field=models.CharField(choices=[('sci', 'Science'), ('arts', 'Arts'), ('com', 'Commerce')], default='sci', max_length=10),\n        ),",
+        "detail": "model.migrations.0005_students_group_alter_couples_husband_age_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0006_students_slug",
+        "description": "model.migrations.0006_students_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0005_students_group_alter_couples_husband_age_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='students',\n            name='slug',\n            field=models.SlugField(blank=True, max_length=20, unique=True),\n        ),",
+        "detail": "model.migrations.0006_students_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0007_alter_students_slug",
+        "description": "model.migrations.0007_alter_students_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0006_students_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='students',\n            name='slug',\n            field=models.SlugField(editable=False),\n        ),",
+        "detail": "model.migrations.0007_alter_students_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "model.migrations.0008_remove_students_slug",
+        "description": "model.migrations.0008_remove_students_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('model', '0007_alter_students_slug'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='students',\n            name='slug',\n        ),\n    ]",
+        "detail": "model.migrations.0008_remove_students_slug",
+        "documentation": {}
+    },
+    {
+        "label": "StuAdmin",
+        "kind": 6,
+        "importPath": "model.admin",
+        "description": "model.admin",
+        "peekOfCode": "class StuAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch','group')\n@admin.register(Mans)\n# Mans Admin\nclass MansAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch')\n@admin.register(Womens)\n#Womens Admin\nclass WomensAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch')",
+        "detail": "model.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MansAdmin",
+        "kind": 6,
+        "importPath": "model.admin",
+        "description": "model.admin",
+        "peekOfCode": "class MansAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch')\n@admin.register(Womens)\n#Womens Admin\nclass WomensAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch')\n@admin.register(Couples)\n# Couples Admin\nclass CouplesAdmin(admin.ModelAdmin):\n    list_display = ('id', 'husband', 'wife', 'husband_age', 'wife_age', 'husband_batch', 'wife_batch')",
+        "detail": "model.admin",
+        "documentation": {}
+    },
+    {
+        "label": "WomensAdmin",
+        "kind": 6,
+        "importPath": "model.admin",
+        "description": "model.admin",
+        "peekOfCode": "class WomensAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'age', 'batch')\n@admin.register(Couples)\n# Couples Admin\nclass CouplesAdmin(admin.ModelAdmin):\n    list_display = ('id', 'husband', 'wife', 'husband_age', 'wife_age', 'husband_batch', 'wife_batch')",
+        "detail": "model.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CouplesAdmin",
+        "kind": 6,
+        "importPath": "model.admin",
+        "description": "model.admin",
+        "peekOfCode": "class CouplesAdmin(admin.ModelAdmin):\n    list_display = ('id', 'husband', 'wife', 'husband_age', 'wife_age', 'husband_batch', 'wife_batch')",
+        "detail": "model.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ModelConfig",
+        "kind": 6,
+        "importPath": "model.apps",
+        "description": "model.apps",
+        "peekOfCode": "class ModelConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'model'",
+        "detail": "model.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "class Students(models.Model):\n  name=models.CharField(max_length=20)\n  age=models.IntegerField(validators=[ageValidtor])\n  batch=models.IntegerField()\n  #file upload\n  pic = models.FileField(upload_to='pics/% Y/%m/%d/',null=True)\n  userpic = models.FileField(upload_to=user_image_path, null=True, blank=True)\n  #choices field\n  group = models.CharField(max_length=10, choices=group, default='sci')\n  # save mehtod : create instance default  and also can perform task in the time of instacne creating",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "Mans",
+        "kind": 6,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "class Mans(models.Model):\n  name = models.CharField(max_length=20)\n  age = models.IntegerField()\n  batch = models.IntegerField()\n  def __str__(self):\n      return self.name\nclass Womens(models.Model):\n  name = models.CharField(max_length=20)\n  age = models.IntegerField()\n  batch = models.IntegerField()",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "Womens",
+        "kind": 6,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "class Womens(models.Model):\n  name = models.CharField(max_length=20)\n  age = models.IntegerField()\n  batch = models.IntegerField()\n  def __str__(self):\n      return self.name\nclass Couples(models.Model):\n   husband  = models.ForeignKey(Mans, on_delete=models.CASCADE)\n   wife = models.OneToOneField(Womens,on_delete=models.CASCADE)\n   husband_age = models.IntegerField(blank=True, null=True,editable=False)",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "Couples",
+        "kind": 6,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "class Couples(models.Model):\n   husband  = models.ForeignKey(Mans, on_delete=models.CASCADE)\n   wife = models.OneToOneField(Womens,on_delete=models.CASCADE)\n   husband_age = models.IntegerField(blank=True, null=True,editable=False)\n   wife_age = models.IntegerField(blank=True, null=True,editable=False)\n   husband_batch = models.IntegerField(blank=True, null=True,editable=False)\n   wife_batch = models.IntegerField(blank=True, null=True,editable=False)\n   def save(self, *args, **kwargs):\n       self.husband_batch = self.husband.batch\n       self.wife_batch = self.wife.batch",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "user_image_path",
+        "kind": 2,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "def user_image_path(instance, filename):\n  return 'users/{0}/{1}'.format(instance.name, filename)\n# ! **fileld validator\ndef ageValidtor(value):\n  if value < 18:\n    raise ValueError(\"Age must be greater than or equal to 18\")\n  if value > 60:\n    raise ValueError(\"Age must be less than or equal to 60\")\n  return value\n#! for choice",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "ageValidtor",
+        "kind": 2,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "def ageValidtor(value):\n  if value < 18:\n    raise ValueError(\"Age must be greater than or equal to 18\")\n  if value > 60:\n    raise ValueError(\"Age must be less than or equal to 60\")\n  return value\n#! for choice\ngroup=[\n  ('sci',\"Science\"),\n  ('arts',\"Arts\"),",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "products_image",
+        "kind": 2,
+        "importPath": "model.models",
+        "description": "model.models",
+        "peekOfCode": "def products_image(instance, filename):\n  return 'users/{0}/{1}'.format(instance.name, filename)\nclass Students(models.Model):\n  name=models.CharField(max_length=20)\n  age=models.IntegerField(validators=[ageValidtor])\n  batch=models.IntegerField()\n  #file upload\n  pic = models.FileField(upload_to='pics/% Y/%m/%d/',null=True)\n  userpic = models.FileField(upload_to=user_image_path, null=True, blank=True)\n  #choices field",
+        "detail": "model.models",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoKits.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .odd {
+        background-color: green;
+        height: 30px;
+        padding: 5px, 5px 5px 5px;
+      }
+      
+      .even {
+        background-color: yellow;
+        height: 30px;
+        padding: 10px, 10px 10px 10px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    {% for std in student %}
+      {% if std.name|length > 5 %}
+        your name is long
+      {% else %}
+        your name is shord
+      {% endif %}
+      {{ std.name|cut:'M' }}
+      <br />
+    {% endfor %}
+
+    {{ now|date }}
+  </body>
+</html>

@@ -228,7 +228,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n    'allauth.account.auth_backends.AuthenticationBackend'\n]\nSITE_ID = 1\nLOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n    'allauth.account.auth_backends.AuthenticationBackend'\n]\nSITE_ID = 2\nLOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -237,7 +237,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "SITE_ID = 1\nLOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',",
+        "peekOfCode": "SITE_ID = 2\nLOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -246,7 +246,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "LOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',\n             'secret':'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',",
+        "peekOfCode": "LOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -255,7 +255,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',\n             'secret':'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',\n         },",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'homepage'\n# Allauth settings\nACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'\n         },",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -264,7 +264,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "ACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',\n             'secret':'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',\n         },\n           'AUTH_PARAMS':{\n             'access_type':'online',",
+        "peekOfCode": "ACCOUNT_LOGIN_METHODS = {'email'}\nACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'\n         },\n         'SCOPE':[\n             'profile',",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -273,7 +273,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',\n             'secret':'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',\n         },\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'",
+        "peekOfCode": "ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']\nSOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'\n         },\n         'SCOPE':[\n             'profile',\n             'email',",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
@@ -282,7 +282,7 @@
         "kind": 5,
         "importPath": "SocialAuth.settings",
         "description": "SocialAuth.settings",
-        "peekOfCode": "SOCIALACCOUNT_PROVIDERS = {\n    'google': {\n         'APP':{\n             'client_id':'814612463673-ir2odt6sb0nafu1snus6oramfqpqt5ud.apps.googleusercontent.com',\n             'secret':'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',\n         },\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'\n         },",
+        "peekOfCode": "SOCIALACCOUNT_PROVIDERS = {\n    'google': {\n           'AUTH_PARAMS':{\n             'access_type':'online',\n             'prompt':'select_account'\n         },\n         'SCOPE':[\n             'profile',\n             'email',\n         ]",
         "detail": "SocialAuth.settings",
         "documentation": {}
     },
